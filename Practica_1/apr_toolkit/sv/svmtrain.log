@@ -1,0 +1,1742 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500) (preloaded format=mex 2017.11.23)  23 NOV 2017 17:10
+entering extended mode
+**./svmtrain.c
+(svmtrain.c
+This is MeX  Version 1.05  18 XII 1993  (B. Jackowski & M. Ry\'cko)
+! You can't use `macro parameter character #' in vertical mode.
+l.1 #
+     include <stdio.h>
+? 
+! You can't use `macro parameter character #' in horizontal mode.
+l.2 #
+     include <stdlib.h>
+? 
+! You can't use `macro parameter character #' in horizontal mode.
+l.3 #
+     include <string.h>
+? 
+! You can't use `macro parameter character #' in horizontal mode.
+l.4 #
+     include <ctype.h>
+? 
+! You can't use `macro parameter character #' in horizontal mode.
+l.5 #
+     include "svm.h"
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.7 #
+     include "mex.h"
+? 
+! You can't use `macro parameter character #' in horizontal mode.
+l.8 #
+     include "svm_model_matlab.h"
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.8 #include "svm_
+                  model_matlab.h"
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.9 
+    
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.10 #
+      ifdef MX_API_VER
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.10 #ifdef MX_
+               API_VER
+? 
+! You can't use `macro parameter character #' in math mode.
+l.11 #
+      if MX_API_VER < 0x07030000
+? 
+! You can't use `macro parameter character #' in math mode.
+l.13 #
+      endif
+? 
+! You can't use `macro parameter character #' in math mode.
+l.14 #
+      endif
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.15 
+     
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.16 #
+      define CMD_LEN 2048
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.16 #define CMD_
+                 LEN 2048
+? 
+! You can't use `macro parameter character #' in math mode.
+l.17 #
+      define Malloc(type,n) (type *)malloc((n)*sizeof(type))
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.18 
+     
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.19 void print_
+                null(const char *s) {}
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.21 
+     
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.22 void exit_
+               with_help()
+? 
+! Undefined control sequence.
+l.25 ...ning_instance_matrix, 'libsvm_options');\n
+                                                  "
+? 
+! Undefined control sequence.
+l.26 	"libsvm_options:\n
+                        "
+? 
+! Undefined control sequence.
+l.27 	"-s svm_type : set type of SVM (default 0)\n
+                                                  "
+? 
+! Undefined control sequence.
+l.28 	"	0 -- C-SVC		(multi-class classification)\n
+                                                  "
+? 
+! Undefined control sequence.
+l.29 ... -- nu-SVC		(multi-class classification)\n
+                                                  "
+? 
+! Undefined control sequence.
+l.30 	"	2 -- one-class SVM\n
+                            "
+? 
+! Undefined control sequence.
+l.31 	"	3 -- epsilon-SVR	(regression)\n
+                                       "
+? 
+! Undefined control sequence.
+l.32 	"	4 -- nu-SVR		(regression)\n
+                                   "
+? 
+! Undefined control sequence.
+l.33 ... set type of kernel function (default 2)\n
+                                                  "
+? 
+! Undefined control sequence.
+l.34 	"	0 -- linear: u'*v\n
+                           "
+? 
+! Undefined control sequence.
+l.35 ... polynomial: (gamma*u'*v + coef0)^degree\n
+                                                  "
+? 
+! Undefined control sequence.
+l.36 ...dial basis function: exp(-gamma*|u-v|^2)\n
+                                                  "
+? 
+! Undefined control sequence.
+l.37 	"	3 -- sigmoid: tanh(gamma*u'*v + coef0)\n
+                                                "
+? 
+! Undefined control sequence.
+l.38 ...rnel values in training_instance_matrix)\n
+                                                  "
+? 
+! Undefined control sequence.
+l.39 ...et degree in kernel function (default 3)\n
+                                                  "
+? 
+! Undefined control sequence.
+l.40 ...kernel function (default 1/num_features)\n
+                                                  "
+? 
+! Undefined control sequence.
+l.41 ...set coef0 in kernel function (default 0)\n
+                                                  "
+? 
+! Undefined control sequence.
+l.42 ...SVC, epsilon-SVR, and nu-SVR (default 1)\n
+                                                  "
+? 
+! Undefined control sequence.
+l.43 ... one-class SVM, and nu-SVR (default 0.5)\n
+                                                  "
+? 
+! Undefined control sequence.
+l.44 ...ss function of epsilon-SVR (default 0.1)\n
+                                                  "
+? 
+! Undefined control sequence.
+l.45 ...et cache memory size in MB (default 100)\n
+                                                  "
+? 
+! Undefined control sequence.
+l.46 ...of termination criterion (default 0.001)\n
+                                                  "
+? 
+! Undefined control sequence.
+l.47 ...shrinking heuristics, 0 or 1 (default 1)\n
+                                                  "
+? 
+! Undefined control sequence.
+l.48 ...robability estimates, 0 or 1 (default 0)\n
+                                                  "
+? 
+! Undefined control sequence.
+l.49 ...ass i to weight*C, for C-SVC (default 1)\n
+                                                  "
+? 
+! Undefined control sequence.
+l.50 	"-v n : n-fold cross validation mode\n
+                                            "
+? 
+! Undefined control sequence.
+l.51 	"-q : quiet mode (no outputs)\n
+                                     "
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.54 
+     
+? 
+
+Overfull \hbox (6331.08089pt too wide) in paragraph at lines 22--54
+[]\tenrm void exit$[]\teni ith[]elp\tenrm ()[]$ |
+
+\hbox(8.49002+2.86108)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm v
+.\kern-0.27779
+.\tenrm o
+.\tenrm i
+.etc.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.56 struct svm_
+                parameter param;		// set by parse_command_line
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.62 
+     
+? 
+
+Overfull \hbox (139.96324pt too wide) in paragraph at lines 55--62
+[]\tenrm // svm ar-gu-ments struct svm$[]\teni arameterparam\tenrm ; \teni ==se
+tbyparse[]ommand[]inestructsvm[]roblemprob\tenrm ; \teni ==setbyread[]roblemstr
+uctsvm[]odel \tensy |
+
+\hbox(7.5+2.86108)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm /
+.\tenrm /
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.\tenrm s
+.etc.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.64 double do_
+               cross_validation()
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.72 
+     
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+<to be read again> 
+                   $
+<to be read again> 
+                   \par 
+l.72 
+     
+? 
+
+Overfull \hbox (412.60005pt too wide) in paragraph at lines 64--72
+[]\tenrm double do$[]\teni ross[]alidation\tenrm ()[]$ |
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm d
+.\tenrm o
+.\tenrm u
+.\tenrm b
+.etc.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.73 	svm_
+          cross_validation(&prob,&param,nr_fold,target);
+? 
+! Misplaced alignment tab character &.
+l.73 	svm_cross_validation(&
+                            prob,&param,nr_fold,target);
+? 
+! Misplaced alignment tab character &.
+l.73 	svm_cross_validation(&prob,&
+                                  param,nr_fold,target);
+? 
+! Extra }, or forgotten $.
+l.105 }
+       
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.106 
+      
+? 
+
+Overfull \hbox (34.06055pt too wide) in paragraph at lines 73--106
+[]\tenrm svm$[]\teni ross[]alidation\tenrm (\teni prob; param; nr[]old; target\
+tenrm ); \teni if\tenrm (\teni param:svm[]ype \tenrm == \teni EPSILON[]VR\tensy
+ jj\teni param:svm[]ype \tenrm ==|
+
+\hbox(7.5+2.86108)x469.75499
+.\hbox(0.0+0.0)x20.0
+.\tenrm s
+.\tenrm v
+.\tenrm m
+.\mathon
+.etc.
+
+
+Overfull \hbox (2380.10161pt too wide) in paragraph at lines 73--106
+\teni NU[]VR\tenrm )[]\teni else[]free\tenrm (\teni target\tenrm ); \teni retur
+nretval\tenrm ;$ |
+
+\hbox(7.5+2.5)x469.75499
+.\teni N
+.\kern1.09026
+.\teni U
+.\hbox(4.78334+0.0)x5.79308, shifted 1.49998
+..\seveni S
+.\teni V
+.etc.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.108 int parse_
+                command_line(int nrhs, const mxArray *prhs[], char *model_fi...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.114 
+      
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+<to be read again> 
+                   $
+<to be read again> 
+                   \par 
+l.114 
+      
+? 
+
+Overfull \hbox (632.6502pt too wide) in paragraph at lines 107--114
+[]\tenrm // nrhs sho-uld be 3 int parse$[]\teni ommand[]ine\tenrm (\teni intnrh
+s; constmxArray \tensy  \teni prhs\tenrm []\teni ; char \tensy  \teni model[]
+ile[]ame\tenrm )[]$ |
+
+\hbox(7.5+2.86108)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm /
+.\tenrm /
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.\tenrm n
+.etc.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.116 	param.svm_
+                 type = C_SVC;
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.132 
+      
+? 
+
+Overfull \hbox (16.848pt too wide) in paragraph at lines 115--132
+[]\tenrm // de-fault va-lues param.svm$[]\teni ype \tenrm = \teni C[]VC\tenrm ;
+ \teni param:kernel[]ype \tenrm = \teni RBF\tenrm ; \teni param:degree \tenrm =
+ 3; \teni param:gamma \tenrm =|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm /
+.\tenrm /
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.\tenrm d
+.etc.
+
+
+Overfull \hbox (13.71811pt too wide) in paragraph at lines 115--132
+\tenrm 1\teni e \tensy   \tenrm 3; \teni param:p \tenrm = 0\teni :\tenrm 1; \te
+ni param:shrinking \tenrm = 1; \teni param:probability \tenrm = 0; \teni param:
+nr[]eight \tenrm = 0; \teni param:weight[]abel \tenrm =|
+
+\hbox(6.94444+1.94444)x469.75499, glue set - 1.0
+.\tenrm 1
+.\teni e
+.\glue(\medmuskip) 2.22217 plus 1.11108 minus 2.22217
+.\tensy  
+.\penalty 700
+.etc.
+
+! Misplaced alignment tab character &.
+l.150 		if(i>=argc &
+                    & argv[i-1][1] != 'q')	// since option -q has no parameter
+? 
+! Misplaced alignment tab character &.
+l.150 		if(i>=argc &&
+                      argv[i-1][1] != 'q')	// since option -q has no parameter
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.155 				param.svm_
+                    type = atoi(argv[i]);
+? 
+! Misplaced alignment tab character &.
+l.191 				print_func = &
+                        print_null;
+? 
+! Undefined control sequence.
+l.199 ...f("n-fold cross validation: n must >= 2\n
+                                                  ");
+? 
+! Misplaced alignment tab character &.
+l.207 ....weight_label[param.nr_weight-1] = atoi(&
+                                                  argv[i-1][2]);
+? 
+! Extra }, or forgotten $.
+l.213 		}
+         
+? 
+! Extra }, or forgotten $.
+l.214 	}
+        
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.215 
+      
+? 
+
+Overfull \hbox (9.03859pt too wide) in paragraph at lines 145--215
+\tenrm option -q has no pa-ra-me-ter re-turn 1; switch(argv[i-1][1])  case 's':
+ param.svm$[]\teni ype \tenrm = \teni atoi\tenrm (\teni argv\tenrm [\teni i\ten
+rm ]); \teni break\tenrm ; \teni case[]t[] \tenrm :|
+
+\hbox(7.51782+2.5)x469.75499, glue set - 1.0
+.\tenrm o
+.\tenrm p
+.\tenrm t
+.\tenrm i
+.\tenrm o
+.etc.
+
+
+Overfull \hbox (24.50604pt too wide) in paragraph at lines 145--215
+\teni param:kernel[]ype \tenrm = \teni atoi\tenrm (\teni argv\tenrm [\teni i\te
+nrm ]); \teni break\tenrm ; \teni case[]d[] \tenrm : \teni param:degree \tenrm 
+= \teni atoi\tenrm (\teni argv\tenrm [\teni i\tenrm ]); \teni break\tenrm ; \te
+ni case[]g[] \tenrm : \teni param:gamma \tenrm =|
+
+\hbox(7.51782+2.5)x469.75499
+.\teni p
+.\teni a
+.\teni r
+.\kern0.27779
+.\teni a
+.etc.
+
+
+Overfull \hbox (43.8538pt too wide) in paragraph at lines 145--215
+\teni atof\tenrm (\teni argv\tenrm [\teni i\tenrm ]); \teni break\tenrm ; \teni
+ case[]r[] \tenrm : \teni param:coef\tenrm 0 = \teni atof\tenrm (\teni argv\ten
+rm [\teni i\tenrm ]); \teni break\tenrm ; \teni case[]n[] \tenrm : \teni param:
+nu \tenrm = \teni atof\tenrm (\teni argv\tenrm [\teni i\tenrm ]); \teni break\t
+enrm ; \teni case[]m[] \tenrm :|
+
+\hbox(7.51782+2.5)x469.75499
+.\teni a
+.\teni t
+.\teni o
+.\teni f
+.\kern1.0764
+.etc.
+
+
+Overfull \hbox (50.12302pt too wide) in paragraph at lines 145--215
+\teni atof\tenrm (\teni argv\tenrm [\teni i\tenrm ]); \teni break\tenrm ; \teni
+ case[]p[] \tenrm : \teni param:p \tenrm = \teni atof\tenrm (\teni argv\tenrm [
+\teni i\tenrm ]); \teni break\tenrm ; \teni case[]h[] \tenrm : \teni param:shri
+nking \tenrm = \teni atoi\tenrm (\teni argv\tenrm [\teni i\tenrm ]); \teni brea
+k\tenrm ; \teni case[]b[] \tenrm :|
+
+\hbox(7.51782+2.5)x469.75499
+.\teni a
+.\teni t
+.\teni o
+.\teni f
+.\kern1.0764
+.etc.
+
+
+Overfull \hbox (20.34285pt too wide) in paragraph at lines 145--215
+\teni param:probability \tenrm = \teni atoi\tenrm (\teni argv\tenrm [\teni i\te
+nrm ]); \teni break\tenrm ; \teni case[]q[] \tenrm : \teni print[]unc \tenrm = 
+\teni print[]ull\tenrm ; \teni i \tensy    \tenrm ; \teni break\tenrm ; \teni c
+ase[]v[] \tenrm : \teni cross[]alidation \tenrm =|
+
+\hbox(7.51782+2.86108)x469.75499, glue set - 1.0
+.\teni p
+.\teni a
+.\teni r
+.\kern0.27779
+.\teni a
+.etc.
+
+
+Overfull \hbox (51.66165pt too wide) in paragraph at lines 145--215
+\tenrm 1; \teni nr[]old \tenrm = \teni atoi\tenrm (\teni argv\tenrm [\teni i\te
+nrm ]); \teni if\tenrm (\teni nr[]old < \tenrm 2)[]\teni break\tenrm ; \teni ca
+se[]w[] \tenrm :|
+
+\hbox(7.51782+2.86108)x469.75499
+.\tenrm 1
+.\tenrm ;
+.\glue(\thinmuskip) 1.66663
+.\teni n
+.\teni r
+.etc.
+
+
+Overfull \hbox (71.43082pt too wide) in paragraph at lines 145--215
+\tenrm + + \teni param:nr[]eight\tenrm ; \teni param:weight[]abel \tenrm = (\te
+ni int\tensy \tenrm )\teni realloc\tenrm (\teni param:weight[]abel; sizeof\ten
+rm (\teni int\tenrm ) \tensy  \teni param:nr[]eight\tenrm ); \teni param:weigh
+t \tenrm =|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\tenrm +
+.\glue(\medmuskip) 2.22217 plus 1.11108 minus 2.22217
+.\tenrm +
+.\penalty 700
+.\glue(\medmuskip) 2.22217 plus 1.11108 minus 2.22217
+.etc.
+
+
+Overfull \hbox (3.65915pt too wide) in paragraph at lines 145--215
+\tenrm (\teni double\tensy \tenrm )\teni realloc\tenrm (\teni param:weight; si
+zeof\tenrm (\teni double\tenrm ) \tensy  \teni param:nr[]eight\tenrm ); \teni 
+param:weight[]abel\tenrm [\teni param:nr[]eight \tensy   \tenrm 1] =|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\tenrm (
+.\teni d
+.\teni o
+.\teni u
+.\teni b
+.etc.
+
+
+Overfull \hbox (48.84804pt too wide) in paragraph at lines 145--215
+\teni atoi\tenrm (\teni argv\tenrm [\teni i \tensy   \tenrm 1][2]); \teni param
+:weight\tenrm [\teni param:nr[]eight \tensy   \tenrm 1] = \teni atof\tenrm (\te
+ni argv\tenrm [\teni i\tenrm ]); \teni break\tenrm ; \teni default \tenrm : \te
+ni mexPrintf\tenrm ("\teni Unknownoption \tensy  |
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\teni a
+.\teni t
+.\teni o
+.\teni i
+.\tenrm (
+.etc.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.216 	svm_
+           set_print_string_function(print_func);
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.217 
+      
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.222 int read_
+               problem_dense(const mxArray *label_vec, const mxArray *instan...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.228 
+      
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+<to be read again> 
+                   $
+<to be read again> 
+                   \par 
+l.228 
+      
+? 
+
+Overfull \hbox (5.01736pt too wide) in paragraph at lines 221--228
+[]\tenrm // read in a pro-blem (in svm-li-ght for-mat) int read$[]\teni roblem[
+]ense\tenrm (\teni constmxArray \tensy  \teni label[]ec; constmxArray \tensy 
+|
+
+\hbox(7.5+2.86108)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm /
+.\tenrm /
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.\tenrm r
+.etc.
+
+
+Overfull \hbox (199.31203pt too wide) in paragraph at lines 221--228
+\teni instance[]at\tenrm )[]$ |
+
+\hbox(7.5+2.5)x469.75499
+.\teni i
+.\teni n
+.\teni s
+.\teni t
+.\teni a
+.etc.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.231 	x_
+         space = NULL;
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.232 
+      
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.233 	labels = mxGetPr(label_
+                              vec);
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.236 
+      
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.239 	l = mxGetM(instance_
+                           mat);
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.242 
+      
+? 
+
+Overfull \hbox (47.95604pt too wide) in paragraph at lines 237--242
+[]\tenrm elements = 0; // num-ber of in-stan-ces l = mxGetM(instance$[]\teni at
+\tenrm ); \teni label[]ector[]ow[]um \tenrm = \teni mxGetM\tenrm (\teni label[]
+ec\tenrm ); \teni prob:l \tenrm =|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm e
+.\tenrm l
+.\tenrm e
+.\tenrm m
+.etc.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.243 	if(label_
+                vector_row_num!=l)
+? 
+! You can't use `macro parameter character #' in math mode.
+l.245 ...("Length of label vector does not match #
+                                                   of instances.\n");
+? 
+! Undefined control sequence.
+l.245 ...l vector does not match # of instances.\n
+                                                  ");
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.248 
+      
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.249 	if(param.kernel_
+                       type == PRECOMPUTED)
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.262 
+      
+? 
+
+Overfull \hbox (418.13396pt too wide) in paragraph at lines 249--262
+[]\tenrm if(param.kernel$[]\teni ype \tenrm == \teni PRECOMPUTED\tenrm )\teni e
+lements \tenrm = \teni l \tensy  \tenrm (\teni sc \tenrm + 1); \teni else[]$ |
+
+
+\hbox(7.51782+2.5)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm i
+.\tenrm f
+.\tenrm (
+.\tenrm p
+.etc.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.264 	prob.x = Malloc(struct svm_
+                                  node *,l);
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.266 
+      
+? 
+
+Overfull \hbox (22.42763pt too wide) in paragraph at lines 263--266
+[]\tenrm prob.y = Mal-loc(double,l); prob.x = Mal-loc(struct svm$[]\teni ode\te
+nsy \teni ; l\tenrm ); \teni x[]pace \tenrm = \teni Malloc\tenrm (\teni struct
+svm[]ode; elements\tenrm );$ |
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm p
+.\tenrm r
+.\tenrm o
+.\tenrm b
+.etc.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.267 	max_
+           index = sc;
+? 
+! Misplaced alignment tab character &.
+l.271 		prob.x[i] = &
+                     x_space[j];
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.273 
+      
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+<to be read again> 
+                   $
+<to be read again> 
+                   \par 
+l.273 
+      
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.276 			if(param.kernel_
+                         type == PRECOMPUTED || samples[k * l + i] != 0)
+? 
+! Extra }, or forgotten $.
+l.282 		}
+         
+? 
+! Extra }, or forgotten $.
+l.284 	}
+        
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.285 
+      
+? 
+
+Overfull \hbox (302.02739pt too wide) in paragraph at lines 274--285
+[]\tenrm for(k = 0; k < sc; k++)  if(param.kernel$[]\teni ype \tenrm == \teni P
+RECOMPUTED\tensy jj\teni samples\tenrm [\teni k \tensy  \teni l \tenrm + \teni
+ i\tenrm ]! = 0)[]\teni x[]pace\tenrm [\teni j \tenrm +|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm f
+.\tenrm o
+.\tenrm r
+.\tenrm (
+.etc.
+
+! Misplaced alignment tab character &.
+l.286 	if(param.gamma == 0 &
+                            & max_index > 0)
+? 
+! Misplaced alignment tab character &.
+l.286 	if(param.gamma == 0 &&
+                              max_index > 0)
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.286 	if(param.gamma == 0 && max_
+                                  index > 0)
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.288 
+      
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.289 	if(param.kernel_
+                       type == PRECOMPUTED)
+? 
+! Undefined control sequence.
+l.294 ...rmat: sample_serial_number out of range\n
+                                                  ");
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.298 
+      
+? 
+
+Overfull \hbox (520.93561pt too wide) in paragraph at lines 289--298
+[]\tenrm if(param.kernel$[]\teni ype \tenrm == \teni PRECOMPUTED\tenrm )\teni f
+or\tenrm (\teni i \tenrm = 0; \teni i < l\tenrm ; \teni i \tenrm + +)[]$ |
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm i
+.\tenrm f
+.\tenrm (
+.\tenrm p
+.etc.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.302 int read_
+               problem_sparse(const mxArray *label_vec, const mxArray *insta...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.310 
+      
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+<to be read again> 
+                   $
+<to be read again> 
+                   \par 
+l.310 
+      
+? 
+
+Overfull \hbox (971.36076pt too wide) in paragraph at lines 302--310
+[]\tenrm int read$[]\teni roblem[]parse\tenrm (\teni constmxArray \tensy  \ten
+i label[]ec; constmxArray \tensy  \teni instance[]at\tenrm )[]$ |
+
+\hbox(7.5+2.86108)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm i
+.\tenrm n
+.\kern-0.27779
+.\tenrm t
+.etc.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.313 	x_
+         space = NULL;
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.314 
+      
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.318 		prhs[0] = mxDuplicateArray(instance_
+                                            mat);
+? 
+! Undefined control sequence.
+l.321 ...nnot transpose training instance matrix\n
+                                                  ");
+? 
+! Extra }, or forgotten $.
+l.326 	}
+        
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.327 
+      
+? 
+
+Overfull \hbox (632.01668pt too wide) in paragraph at lines 315--327
+[]\tenrm // trans-pose in-stance ma-trix  mxAr-ray *prhs[1], *plhs[1]; prhs[0] 
+= mxDuplicateArray(instance$[]\teni at\tenrm ); \teni if\tenrm (\teni mexCallMA
+TLAB\tenrm (1\teni ; plhs; \tenrm 1\teni ; prhs; \tenrm "\teni transpose\tenrm 
+"))[]\teni instance[]at[]ol \tenrm =|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm /
+.\tenrm /
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.\tenrm t
+.etc.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.329 	labels = mxGetPr(label_
+                              vec);
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.333 
+      
+? 
+[1]
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.334 	num_
+           samples = mxGetNzmax(instance_mat_col);
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.335 
+      
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.337 	l = mxGetN(instance_
+                           mat_col);
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.340 
+      
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.341 	if(label_
+                vector_row_num!=l)
+? 
+! You can't use `macro parameter character #' in math mode.
+l.343 ...("Length of label vector does not match #
+                                                   of instances.\n");
+? 
+! Undefined control sequence.
+l.343 ...l vector does not match # of instances.\n
+                                                  ");
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.346 
+      
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.347 	elements = num_
+                      samples + l;
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.349 
+      
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.351 	prob.x = Malloc(struct svm_
+                                  node *,l);
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.353 
+      
+? 
+
+Overfull \hbox (22.42763pt too wide) in paragraph at lines 350--353
+[]\tenrm prob.y = Mal-loc(double,l); prob.x = Mal-loc(struct svm$[]\teni ode\te
+nsy \teni ; l\tenrm ); \teni x[]pace \tenrm = \teni Malloc\tenrm (\teni struct
+svm[]ode; elements\tenrm );$ |
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm p
+.\tenrm r
+.\tenrm o
+.\tenrm b
+.etc.
+
+! Misplaced alignment tab character &.
+l.357 		prob.x[i] = &
+                     x_space[j];
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.357 		prob.x[i] = &x_
+                       space[j];
+? 
+! Extra }, or forgotten $.
+l.367 	}
+        
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.368 
+      
+? 
+
+Overfull \hbox (13.43994pt too wide) in paragraph at lines 354--368
+\teni low\tenrm ; \teni k < high\tenrm ; \teni k \tenrm + +)[]\teni x[]pace\ten
+rm [\teni j \tenrm + +]\teni :index \tenrm =|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\teni l
+.\kern0.19678
+.\teni o
+.\teni w
+.\kern0.26909
+.etc.
+
+! Misplaced alignment tab character &.
+l.369 	if(param.gamma == 0 &
+                            & max_index > 0)
+? 
+! Misplaced alignment tab character &.
+l.369 	if(param.gamma == 0 &&
+                              max_index > 0)
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.369 	if(param.gamma == 0 && max_
+                                  index > 0)
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.371 
+      
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.375 static void fake_
+                       answer(int nlhs, mxArray *plhs[])
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.381 
+      
+? 
+
+Overfull \hbox (123.0983pt too wide) in paragraph at lines 375--381
+[]\tenrm static void fake$[]\teni nswer\tenrm (\teni intnlhs; mxArray \tensy  
+\teni plhs\tenrm [])[]$ |
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm s
+.\tenrm t
+.\tenrm a
+.\tenrm t
+.etc.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.387 	const char *error_
+                         msg;
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.388 
+      
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.395 		exit_
+             with_help();
+? 
+! Extra }, or forgotten $.
+l.398 	}
+        
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.399 
+      
+? 
+! Misplaced alignment tab character &.
+l.401 	if(nrhs > 1 &
+                    & nrhs < 4)
+? 
+! Misplaced alignment tab character &.
+l.401 	if(nrhs > 1 &&
+                      nrhs < 4)
+? 
+! Undefined control sequence.
+l.407 ...ctor and instance matrix must be double\n
+                                                  ");
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.408 			fake_
+              answer(nlhs, plhs);
+? 
+! Extra }, or forgotten $.
+l.410 		}
+         
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.411 
+      
+? 
+! Undefined control sequence.
+l.414 ...l vector should not be in sparse format\n
+                                                  ");
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.415 			fake_
+              answer(nlhs, plhs);
+? 
+! Extra }, or forgotten $.
+l.417 		}
+         
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.418 
+      
+? 
+
+Overfull \hbox (68.04091pt too wide) in paragraph at lines 412--418
+[]\tenrm if(mxIsSparse(prhs[0]))  me-xPrintf("Error: la-bel vec-tor sho-uld not
+ be in sparse for-mat"); fake$[]\teni nswer\tenrm (\teni nlhs; plhs\tenrm ); \t
+eni return\tenrm ;$ |
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm i
+.\tenrm f
+.\tenrm (
+.\tenrm m
+.etc.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.419 		if(parse_
+                 command_line(nrhs, prhs, NULL))
+? 
+! Misplaced alignment tab character &.
+l.422 			svm_destroy_param(&
+                            param);
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.426 
+      
+? 
+
+Overfull \hbox (64.82338pt too wide) in paragraph at lines 419--426
+[]\tenrm if(parse$[]\teni ommand[]ine\tenrm (\teni nrhs; prhs; NULL\tenrm ))[]$
+ |
+
+\hbox(7.5+2.86108)x469.75499
+.\hbox(0.0+0.0)x20.0
+.\tenrm i
+.\tenrm f
+.\tenrm (
+.\tenrm p
+.etc.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.429 			if(param.kernel_
+                         type == PRECOMPUTED)
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.433 
+      
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+<to be read again> 
+                   $
+<to be read again> 
+                   \par 
+l.433 
+      
+? 
+
+Overfull \hbox (224.02757pt too wide) in paragraph at lines 427--433
+[]\tenrm if(mxIsSparse(prhs[1]))  if(param.kernel$[]\teni ype \tenrm == \teni P
+RECOMPUTED\tenrm )[]$ |
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm i
+.\tenrm f
+.\tenrm (
+.\tenrm m
+.etc.
+
+! Undefined control sequence.
+l.437 ...enerate a full training instance matrix\n
+                                                  ");
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.438 					svm_
+               destroy_param(&param);
+? 
+! Misplaced alignment tab character &.
+l.438 					svm_destroy_param(&
+                              param);
+? 
+! Extra }, or forgotten $.
+l.441 				}
+           
+? 
+! Extra }, or forgotten $.
+l.445 			}
+          
+? 
+! Extra }, or forgotten $.
+l.448 		}
+         
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.451 
+      
+? 
+
+Overfull \hbox (14.52625pt too wide) in paragraph at lines 434--451
+\tenrm not ge-ne-rate a full tra-ining in-stance ma-trix"); svm$[]\teni estroy[
+]aram\tenrm (\teni param\tenrm ); \teni fake[]nswer\tenrm (\teni nlhs; plhs\ten
+rm ); \teni return\tenrm ; \teni err \tenrm =|
+
+\hbox(7.5+2.86108)x469.75499, glue set - 1.0
+.\tenrm n
+.\tenrm o
+.\tenrm t
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.\tenrm g
+.etc.
+
+
+Overfull \hbox (162.0441pt too wide) in paragraph at lines 434--451
+\teni read[]roblem[]ense\tenrm (\teni prhs\tenrm [0]\teni ; lhs\tenrm [0]); \te
+ni mxDestroyArray\tenrm (\teni lhs\tenrm [0]); \teni mxDestroyArray\tenrm (\ten
+i rhs\tenrm [0]); \teni elseerr \tenrm = \teni read[]roblem[]parse\tenrm (\teni
+ prhs\tenrm [0]\teni ; prhs\tenrm [1]); \teni elseerr \tenrm =|
+
+\hbox(7.5+2.86108)x469.75499
+.\teni r
+.\kern0.27779
+.\teni e
+.\teni a
+.\teni d
+.etc.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.453 		error_
+              msg = svm_check_parameter(&prob, &param);
+? 
+! Misplaced alignment tab character &.
+l.453 		error_msg = svm_check_parameter(&
+                                         prob, &param);
+? 
+! Misplaced alignment tab character &.
+l.453 		error_msg = svm_check_parameter(&prob, &
+                                                param);
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.454 
+      
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.455 		if(err || error_
+                        msg)
+? 
+! Misplaced alignment tab character &.
+l.459 			svm_destroy_param(&
+                            param);
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.466 
+      
+? 
+
+Overfull \hbox (282.0952pt too wide) in paragraph at lines 455--466
+[]\tenrm if(err || error$[]\teni sg\tenrm )[]$ |
+
+\hbox(7.5+2.86108)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm i
+.\tenrm f
+.\tenrm (
+.\tenrm e
+.etc.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.467 		if(cross_
+                 validation)
+? 
+! Misplaced alignment tab character &.
+l.478 			model = svm_train(&
+                            prob, &param);
+? 
+! Misplaced alignment tab character &.
+l.478 			model = svm_train(&prob, &
+                                   param);
+? 
+! Misplaced alignment tab character &.
+l.482 			svm_free_and_destroy_model(&
+                                     model);
+? 
+! Misplaced alignment tab character &.
+l.484 		svm_destroy_param(&
+                           param);
+? 
+! Extra }, or forgotten $.
+l.488 	}
+        
+? 
+! Extra }, or forgotten $.
+l.495 }
+       
+? 
+)
+*
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+<*> 
+    
+? 
+
+Overfull \hbox (1859.6367pt too wide) in paragraph at lines 467--0
+[]\tenrm if(cross$[]\teni alidation\tenrm )[]\teni else[]svm[]estroy[]aram\tenr
+m (\teni param\tenrm ); \teni free\tenrm (\teni prob:y\tenrm ); \teni free\tenr
+m (\teni prob:x\tenrm ); \teni free\tenrm (\teni x[]pace\tenrm ); \teni else[]$
+ |
+
+\hbox(7.51782+2.86108)x469.75499
+.\hbox(0.0+0.0)x20.0
+.\tenrm i
+.\tenrm f
+.\tenrm (
+.\tenrm c
+.etc.
+
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*\end
+[2]
+(\end occurred inside a group at level 9)
+
+### simple group (level 9) entered at line 436 ({)
+### simple group (level 8) entered at line 428 ({)
+### simple group (level 7) entered at line 413 ({)
+### simple group (level 6) entered at line 406 ({)
+### simple group (level 5) entered at line 402 ({)
+### simple group (level 4) entered at line 394 ({)
+### simple group (level 3) entered at line 386 ({)
+### simple group (level 2) entered at line 316 ({)
+### simple group (level 1) entered at line 147 ({)
+### bottom level
+Output written on svmtrain.dvi (2 pages, 20740 bytes).
