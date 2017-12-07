@@ -7,7 +7,6 @@ grafo=zeros(N, N);
 grafo(C,[R S])=1;
 grafo(R,W)=1;
 grafo(S,W)=1;
-grafo
 
 nodosDiscretos = 1:N;
 tallaNodos= 2*ones(1,N);
@@ -40,13 +39,13 @@ m.T
 evidencia = cell(1,N);
 [explMaxProb, logVerosim] = calc_mpe(motor, evidencia)
 
-%Learn
+%Learn datos completos
 semilla = 0; 
 rng(semilla,'v5normal');
 nMuestras = 1000;
 muestras = cell(N, nMuestras);
 for i=1:nMuestras muestras(:,i) = sample_bnet(redB); end
-muestras'
+muestras';
 
 redAPR=mk_bnet(grafo, tallaNodos);
 
@@ -63,16 +62,18 @@ for i=1:N s=struct(redAPR2.CPD{i}); TPCaux{i}=s.CPT; end
 dispcpt(TPCaux{S})
 
 
-%EM
+%EM datos incompletos
 
-nMuestras = 1000;
-muestras = cell(N, nMuestras);
+muestrasS= muestras;
 
 semilla = 0; rng(semilla);
-ocultas= rand(N, nMuestras) > 0.5;
+%Para permitir más iteraciones hay que ocultar mas datos
+ocultas= rand(N, nMuestras) > 0.4;
 [I,J]= find(ocultas);
-for k=1:length(I) muestras{I(k), J(k)} = []; end
+for k=1:length(I) muestrasS{I(k), J(k)} = []; end
+muestrasS'
 redEM=mk_bnet(grafo, tallaNodos,'discrete',nodosDiscretos);
+
 
 redEM.CPD{C}=tabular_CPD(redEM, C);
 redEM.CPD{R}=tabular_CPD(redEM, R);
@@ -80,9 +81,10 @@ redEM.CPD{S}=tabular_CPD(redEM, S);
 redEM.CPD{W}=tabular_CPD(redEM, W);
 motorEM=jtree_inf_engine(redEM);
 
-maxIter = 200; eps = 1e-4;
+maxIter = 30; 
+eps = 1e-4;
 semilla = 0; rng(semilla,'v5normal');
-[redEM2, trazaLogVer] = learn_params_em(motorEM, muestras, maxIter, eps);
+[redEM2, trazaLogVer] = learn_params_em(motorEM, muestrasS, maxIter, eps);
 auxTPC = cell(1,N);
 for i=1:N s=struct(redEM2.CPD{i}); auxTPC{i}=s.CPT; end
 
